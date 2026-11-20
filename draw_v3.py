@@ -33,7 +33,7 @@ REGION_COLORS = {
     "Oceania": (31, 138, 140),
     "Global": (107, 107, 107),
 }
-REGIONS = [("Europe", 9), ("Asia-Pacific", 6), ("Middle East", 4),
+REGIONS = [("Europe", 10), ("Asia-Pacific", 6), ("Middle East", 4),
            ("Africa", 4), ("Americas", 4), ("Oceania", 2), ("Global", 5)]
 
 SERIF = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
@@ -120,6 +120,11 @@ CARDS = [
 ]
 
 # (number, place, rest of item) — each item wraps to at most 2 lines.
+# Fix 21 Nov: #31/#32 replaced — the US Senate permitting vote and the
+# Argentina disability law both happened Thu 19 Nov, not Fri 20 Nov.
+# Replacements verified as Friday 20 Nov events: the UK-EU Youth Experience
+# Scheme (summit agreement, Reuters) and Doerkson's swearing-in as BC premier
+# (Canadian Press). Both removed stories are now DATE CHECK exclusions.
 LIST_ITEMS = [
     (13, "Shenzhen", "Xi hails \u201ccomprehensive turnaround\u201d in ties with "
      "Australia; 2027 tourism year (Reuters)"),
@@ -157,13 +162,13 @@ LIST_ITEMS = [
      "(Dawan)"),
     (30, "South Africa", "Nearly 600 women killed in three months, police "
      "figures show (OkayAfrica)"),
-    (31, "Washington", "US Senate passes energy-permitting overhaul 62\u201333; "
-     "House next (CNBC)"),
-    (32, "Buenos Aires", "Argentina's Senate approves disability framework, "
-     "71\u20130 (Senate)"),
+    (31, "London", "UK\u2013EU youth scheme agreed: 100,000 places a year each "
+     "way, ages 18\u201331 (Reuters)"),
+    (32, "Victoria", "Doerkson sworn in as BC's 38th premier; first Tory "
+     "government in ~100 years (CP)"),
     (33, "Cook Islands", "Cyclone Xavier weakens near northern islands; gales "
      "hold (MetService)"),
-    (34, "Gold", "Gold falls 4.2% as dollar and yields stay high; 10-yr "
+    (34, "Gold", "Gold falls ~4% as dollar and yields stay high; 10-yr "
      "above 5% (CNBC)"),
 ]
 
@@ -173,7 +178,8 @@ DATE_CHECK = (
     "Anthropic's IPO \u00b7 Wall Street's 2% fall \u00b7 the Senate's Iran vote \u00b7 the Haiti "
     "raid \u00b7 the Riyadh tower strike \u00b7 the Berlin summit \u00b7 the Gaza Yellow Line "
     "raid \u00b7 Jepchirchir's ban \u00b7 Somalia's expulsion \u00b7 Zimbabwe's landmines \u00b7 "
-    "Japan Tobacco's charge. Not yet happened: BepiColombo's orbit burn (Saturday) "
+    "Japan Tobacco's charge \u00b7 the US Senate permitting vote (Thu 19 Nov) \u00b7 "
+    "Argentina's disability law (Thu 19 Nov). Not yet happened: BepiColombo's orbit burn (Saturday) "
     "and any final COP31 text."
 )
 
@@ -188,7 +194,7 @@ PINS = {
     20: (7.7, 45.1, 2, -4), 21: (30.7, 36.9, -8, -6), 22: (36.2, 50.0, 6, 0),
     23: (-80.9, 28.4, 0, 0), 25: (4.4, 50.8, 5, 6), 26: (13.4, 52.5, 0, -4),
     27: (46.7, 24.7, 0, 0), 28: (49.5, 13.0, 0, 0), 29: (45.3, 2.0, 0, 0),
-    30: (28.0, -26.2, 0, 0), 31: (-77.0, 38.9, 0, 0), 32: (-58.4, -34.6, 0, 0),
+    30: (28.0, -26.2, 0, 0), 31: (-0.1, 51.5, -14, 10), 32: (-123.4, 48.4, -6, -4),
     33: (-160.0, -10.0, 0, 0),
 }
 
